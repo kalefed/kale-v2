@@ -1,10 +1,7 @@
 import { dm_mono, josefin_sans } from "./font";
 import Image from "next/image";
 import profile from "../assets/profile.png";
-import { IconButton } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+
 
 export default function Home() {
 
@@ -23,15 +20,6 @@ export default function Home() {
             <br />
             and computer science student
           </p>
-        </div>
-        <div className="flex items-center justify-center">
-          <Image
-            src={profile}
-            alt="Picture of the author"
-            width={300}
-            height={300}
-            className="rounded-full"
-          />
         </div>
       </div>
     </main>
