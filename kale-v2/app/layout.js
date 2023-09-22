@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body> 
-      <div className='px-60 min-h-screen'>
+      <div className='px-16 md:px-32 lg:px-72 min-h-screen'>
         <NavBar />
         {children}
         <Footer/>
