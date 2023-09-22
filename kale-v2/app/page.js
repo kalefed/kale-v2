@@ -1,7 +1,13 @@
 import { dm_mono, josefin_sans } from "./font";
 import Image from "next/image";
 import profile from "../assets/profile.png";
+import { IconButton } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+
 export default function Home() {
+
   return (
     <main className="h-[calc(100vh-65px)] bg-fixed">
       <div className="flex items-center justify-between h-full">
