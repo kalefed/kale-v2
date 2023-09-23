@@ -15,16 +15,19 @@
   color: #232323; 
   
 }
-/* 
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
+.star1 {
+  background-image: url('//kale-v2/public/star.svg'); /* Update the path */
+  background-repeat: no-repeat;
+  background-position: 20% 30%; /* Adjust the position as needed */
+  width: 50px; /* Adjust the star size */
+  height: 50px; /* Adjust the star size */
+}
+
+.star2 {
+  background-image: url('//kale-v2/public/star.svg'); /* Update the path */
+  background-repeat: no-repeat;
+  background-position: 70% 60%; /* Adjust the position as needed */
+  width: 50px; /* Adjust the star size */
+  height: 50px; /* Adjust the star size */
+}

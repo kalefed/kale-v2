@@ -31,17 +31,30 @@ export default function About() {
             <p
               className={`lg:text-base md:text-md text-sm ${dm_mono.className}`}
             >
-              I am currently studying at Queen’s University to obtain a Computer
-              Science with a focus in Artificial Intelligence.
+              Hi, I'm Kaleigh (she/they)! I am currently pursuing my{" "}
+              <span className="text-[#759dc5] italic">
+                Bachelor of Computing{" "}
+              </span>
+              with a major in Artificial Intelligence to work towards becoming a{" "}
+              <span className="text-[#759dc5] italic">
+                full stack developer
+              </span>
+              .
               <br />
-              <br />
-              I’ve worked as a developer at Statistics Canada and the CRA as a
-              student developer working with technologies like React, Java Swing
+              <br />I have a combination of{" "}
+              <span className="text-[#759dc5] italic">two years</span> of
+              professional work experience as a developer at{" "}
+              <span className="text-[#759dc5] italic">Statistics Canada</span>{" "}
+              and the{" "}
+              <span className="text-[#759dc5] italic">
+                Canada Revenue Agency
+              </span>{" "}
+              working with a variety of technologies such as React, Java Swing
               and Python.
               <br />
               <br />
-              In my free time, you can find me reading a book, usually fantasy
-              or sci-fi, playing Breath of the Wild, or drawing.
+              In my free time, you can find me reading a book, making too much
+              coffee with my chemex, playing Breath of the Wild, or drawing.
             </p>
           </FadeInUp>
         </div>
