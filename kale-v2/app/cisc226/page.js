@@ -1,9 +1,8 @@
 import { FadeInUp } from "@/components/fadeInUp";
+import Construction from "@/components/underConstruction";
 
 export default function CISC226() {
   return (
-    <div className="h-[calc(100vh-65px)]">
-      <p>cisc226 page</p>
-    </div>
+      <Construction />
   );
 }

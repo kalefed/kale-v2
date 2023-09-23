@@ -1,9 +1,8 @@
 import { FadeInUp } from "@/components/fadeInUp";
+import Construction from "@/components/underConstruction";
 
 export default function Subcommittee() {
   return (
-    <div className="h-[calc(100vh-65px)]">
-      <p>Subcommittee page</p>
-    </div>
+    <Construction />
   );
 }
