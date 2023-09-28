@@ -1,70 +1,66 @@
-import { dm_mono, josefin_sans } from "../font";
-import Link from "next/link";
-import Image from "next/image";
+import { dm_mono, dm_mono_bold, jost } from "../font";
 import { FadeInUp } from "@/components/fadeInUp";
-import javaScriptIcon from "..//..//public/images/javascript.svg"
-import cssIcon from "..//..//public/images/css.svg"
-import htmlIcon from "..//..//public/images/html.svg"
-import nextIcon from "..//..//public/images/nextjs.svg"
-import githubIcon from "..//..//public/images/github.svg"
-import bulmaIcon from "..//..//public/images/bulma.svg"
+
+import { IconButton } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 export default function Compsa() {
   return (
     <div className="h-fit">
-      <Link href="/">Back to Home</Link>
+      <IconButton size="medium" href={"/"}>
+        <ArrowBackIcon fontSize="medium" />
+      </IconButton>
       <FadeInUp>
-        <div className="flex flex-col h-full pt-11">
-          <p
-            className={`md:text-sm text-xs text-[#a8afb5] pb-5 ${dm_mono.className}`}
-          >
-            June 2023 - Present [4 months]
-          </p>
-          <h1
-            className={`lg:text-5xl md:text-4xl text-2xl ${josefin_sans.className}`}
-          >
-            Queen's University's Computing Students Association (COMPSA)
-          </h1>
-          <p className={`pt-5 ${dm_mono.className}`}>
-            In June 2023, I began a volunteer position as a{" "}
-            <span className="text-[#759dc5] italic">Full Stack Developer</span>{" "}
-            on the COMPSA tech team.
-          </p>
-          <h2
-            className={`text-[#818181] lg:text-2xl md:text-xl text-md pt-16 pb-4 ${josefin_sans.className}`}
-          >
-            01. Overview of technologies I worked with
-          </h2>
-          <div className="flex flex-row gap-5">
-          <Image priority src={javaScriptIcon} height={50} width={50} alt="react" />
-          <Image priority src={cssIcon} height={50} width={50} alt="react" />
-          <Image priority src={htmlIcon} height={50} width={50} alt="react" />
-          <Image priority src={bulmaIcon} height={50} width={50} alt="react" />
-          <Image priority src={nextIcon} height={50} width={50} alt="react" />
-          <Image priority src={githubIcon} height={50} width={50} alt="react" />
+        <div className="flex md:flex-row flex-col h-full pt-11 mb-11">
+          <div className="basis-1/2">
+            <h1
+              className={`lg:text-5xl md:text-4xl text-3xl ${jost.className}`}
+            >
+              COMPSA
+              <br />- Full-Stack Developer
+            </h1>
+            <p
+              className={`lg:text-sm text-xs text-[#a8afb5] pt-5 ${dm_mono.className}`}
+            >
+              June 2023 - Present
+            </p>
           </div>
+          <div className="basis-3/4 md:pl-8 lg:text-base md:text-md text-sm pt-3">
+            <p className={`font-semibold  ${jost.className}`}>Summary:</p>
+            <p className={`${dm_mono.className}`}>
+              Starting in the June 2023, I began a volunteer position at the
+              Queen's Computing Students Association (COMPSA) as a full-stack
+              developer.
+            </p>
+            <p className={`pt-10 ${dm_mono.className}`}>
+              During my time at COMPSA I've been working on a team of 3 to
+              design and develop a{" "}
+              <span className={`text-[#759dc5] ${dm_mono_bold.className}`}>
+                responsive
+              </span>{" "}
+              Admin panel for the COMPSA website to allow authorized users to
+              interact with the API and display the database in an intuitive and
+              user-friendly way. This is being developed using{" "}
+              <span className={`text-[#759dc5] ${dm_mono_bold.className}`}>
+                Next.js
+              </span>{" "}
+              and the styling has been done leveraging{" "}
+              <span className={`text-[#759dc5] ${dm_mono_bold.className}`}>
+                Bulma
+              </span>{" "}
+            </p>
 
-          <h2
-            className={`text-[#818181] lg:text-2xl md:text-xl text-md pt-16 ${josefin_sans.className}`}
-          >
-            02. Admin Panel
-          </h2>
-          <p className={`pt-5 ${dm_mono.className}`}>
-            I have been working on a team of 3 to design and develop a
-            responsive Admin panel for the COMPSA website to allow authorized
-            users to interact with the API and display the database in an
-            intuitive and user-friendly way.
-          </p>
-          <h2
-            className={`text-[#818181] lg:text-2xl md:text-xl text-md pt-16 ${josefin_sans.className}`}
-          >
-            03. Key Takeaways
-          </h2>
-          <p className={`pt-5 pb-36 ${dm_mono.className}`}>
-            This experience further confirmed my desire to work in a Frontedn or
-            Full stack development role and allowed me to grow and strengthen my
-            programming skills with Java.
-          </p>
+            <p className={`pt-10 font-semibold  ${jost.className}`}>
+              Some things I have helped create:
+            </p>
+            <ul className={`list-disc list-inside ${dm_mono.className}`}>
+              <li>Responsive hamburger navigation bar</li>
+              <li>Designing website components</li>
+              <li>
+                Forms used to add new resources, which are displayed on a modal
+              </li>
+            </ul>
+          </div>
         </div>
       </FadeInUp>
     </div>

@@ -1,8 +1,9 @@
-import { dm_mono, josefin_sans } from "@/app/font";
+import { dm_mono, josefin_sans, jost } from "@/app/font";
 import Link from "next/link";
 import Image from "next/image";
 
 import Tools from "./tools";
+import { Jost } from "next/font/google";
 
 export default function Experience({}) {
   const data = [
@@ -12,7 +13,7 @@ export default function Experience({}) {
     "Orientation Leader // Queen's Univeristy",
     "Student Subcommittee Coordinator // Statistics Canada",
     "Student Peer Mentor // Statistics Canada",
-    "CISC226 Video Game Design Artist // Queen's Univeristy",
+    "CISC226 Video Game Design Project // Queen's Univeristy",
   ];
 
   const subData = [
@@ -49,10 +50,11 @@ export default function Experience({}) {
     <div className="h-screen">
       <div className="flex flex-col justify-center h-full">
         <h1
-          className={`lg:text-6xl md:text-4xl text-3xl pb-10 ${josefin_sans.className}`}
+          className={`lg:text-5xl md:text-4xl text-3xl pb-10 ${jost.className}`}
         >
           experience
         </h1>
+
         <ul
           className={`border-t border-b border-gray-300 ${dm_mono.className}`}
         >
@@ -67,13 +69,13 @@ export default function Experience({}) {
                 <div className="flex justify-between">
                   {subData[index] && (
                     <p
-                      className={`md:text-sm text-xs text-[#a8afb5] ${josefin_sans.className}`}
+                      className={`md:text-sm text-xs text-[#a8afb5] ${jost.className}`}
                     >
                       {subData[index]}
                     </p>
                   )}
                   <p
-                    className={`text-sm text-[#a8afb5] ${josefin_sans.className}`}
+                    className={`text-sm text-[#a8afb5] ${jost.className}`}
                   >
                     {posType[index]}
                   </p>
