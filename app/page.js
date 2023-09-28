@@ -22,7 +22,7 @@ export default function Home() {
               <p
                 className={`lg:text-2xl md:text-xl text-lg ${dm_mono.className}`}
               >
-                an aspiring frontend developer
+                an aspiring full-stack developer
                 <br />
                 and computer science student
               </p>

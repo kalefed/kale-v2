@@ -9,7 +9,7 @@ import pentagram from "..//..//assets/pentagram.png";
 export default function Mentor() {
   return (
     <div className="h-fit">
-      <IconButton size="medium" href={"/"}>
+      <IconButton size="medium" href={"/kale-v2"}>
         <ArrowBackIcon fontSize="medium" />
       </IconButton>
       <FadeInUp>

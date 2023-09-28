@@ -7,7 +7,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 export default function CRA() {
   return (
     <div className="h-fit">
-      <IconButton size="medium" href={"/"}>
+      <IconButton size="medium" href={"/kale-v2"}>
         <ArrowBackIcon fontSize="medium" />
       </IconButton>
       <FadeInUp>
