@@ -1,9 +1,6 @@
-import { dm_mono, josefin_sans, jost } from "@/app/font";
+import { syne, ruwudu } from "@/app/font";
 import Link from "next/link";
 import Image from "next/image";
-
-import Tools from "./tools";
-import { Jost } from "next/font/google";
 
 export default function Experience({}) {
   const data = [
@@ -50,13 +47,13 @@ export default function Experience({}) {
     <div className="h-screen">
       <div className="flex flex-col justify-center h-full">
         <h1
-          className={`lg:text-5xl md:text-4xl text-3xl pb-10 ${jost.className}`}
+          className={`lg:text-5xl md:text-4xl text-3xl pb-10 ${syne.className}`}
         >
-          experience
+          Experience
         </h1>
 
         <ul
-          className={`border-t border-b border-gray-300 ${dm_mono.className}`}
+          className={`border-t border-b border-gray-300 ${syne.className}`}
         >
           {data.map((item, index) => (
             <Link href={`/${pageLink[index]}`} passHref>
@@ -69,13 +66,13 @@ export default function Experience({}) {
                 <div className="flex justify-between">
                   {subData[index] && (
                     <p
-                      className={`md:text-sm text-xs text-[#a8afb5] ${jost.className}`}
+                      className={`md:text-sm text-xs text-[#a8afb5] ${syne.className}`}
                     >
                       {subData[index]}
                     </p>
                   )}
                   <p
-                    className={`text-sm text-[#a8afb5] ${jost.className}`}
+                    className={`text-sm text-[#a8afb5] ${syne.className}`}
                   >
                     {posType[index]}
                   </p>
