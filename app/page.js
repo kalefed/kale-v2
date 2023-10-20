@@ -15,11 +15,12 @@ export default function Home() {
           <div className="flex flex-col w-full">
             <div className="absolute -z-1 inset-0">
               <Image
-                className="opacity-30 blur-lg absolute -top-10 -right-96"
+                className="opacity-30 blur-lg absolute bottom-30 -right-96"
                 src={blob}
                 alt="My SVG"
-                width={700}
-                height={700}
+                width={600}
+                height={600}
+                priority={true}
               />
             </div>
             <div className="absolute -z-1 inset-0">
@@ -29,6 +30,7 @@ export default function Home() {
                 alt="My SVG"
                 width={400}
                 height={400}
+                priority={true}
               />
             </div>
             <FadeInUp>
