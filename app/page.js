@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-col w-full">
             <div className="absolute -z-1 inset-0">
               <Image
-                className="opacity-30 blur-lg absolute bottom-30 -right-96"
+                className="opacity-70 blur-lg absolute bottom-30 -right-96"
                 src={blob}
                 alt="My SVG"
                 width={600}
@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className="absolute -z-1 inset-0">
               <Image
-                className="opacity-30 blur-lg absolute bottom-0 -left-96"
+                className="opacity-70 blur-lg absolute bottom-0 -left-96"
                 src={blob2}
                 alt="My SVG"
                 width={400}
