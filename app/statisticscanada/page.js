@@ -1,6 +1,4 @@
 import { dm_mono, dm_mono_bold, josefin_sans, jost } from "../font";
-import Link from "next/link";
-import Image from "next/image";
 import { FadeInUp } from "@/components/fadeInUp";
 
 import { IconButton } from "@mui/material";

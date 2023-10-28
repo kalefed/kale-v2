@@ -1,4 +1,4 @@
-import { syne, ruwudu } from "@/app/font";
+import { syne, roboto_mono } from "@/app/font";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -44,43 +44,16 @@ export default function Experience({}) {
   ];
 
   return (
-    <div className="h-screen">
-      <div className="flex flex-col justify-center h-full">
-        <h1
-          className={`lg:text-5xl md:text-4xl text-3xl pb-10 ${syne.className}`}
-        >
-          Experience
-        </h1>
-
-        <ul
-          className={`border-t border-b border-gray-300 ${syne.className}`}
-        >
-          {data.map((item, index) => (
-            <Link href={`/${pageLink[index]}`} passHref>
-              <li
-                key={index}
-                className="border-gray-300 border-b p-2  md:text-lg sm:text-md hover:bg-gray-100"
-                href={`/${pageLink[index]}`}
-              >
-                {item}
-                <div className="flex justify-between">
-                  {subData[index] && (
-                    <p
-                      className={`md:text-sm text-xs text-[#a8afb5] ${syne.className}`}
-                    >
-                      {subData[index]}
-                    </p>
-                  )}
-                  <p
-                    className={`text-sm text-[#a8afb5] ${syne.className}`}
-                  >
-                    {posType[index]}
-                  </p>
-                </div>
-              </li>
-            </Link>
-          ))}
-        </ul>
+    <div className="h-screen grid lg:grid-cols-8 md:grid-cols-8 grid-cols-1 grid-rows-5 gap-5 p-5">
+        <div className="lg:col-start-2 lg:col-end-8 lg:row-start-1 lg:row-end-2 flex justify-center items-center">
+          <h1
+            className={`lg:text-5xl md:text-4xl text-3xl uppercase ${roboto_mono["300"]}`}
+          >
+            Take a look at my{" "}
+            <span className="border-2 border-black inline-block rounded-full p-2">
+              experience
+            </span>
+          </h1>
       </div>
     </div>
   );

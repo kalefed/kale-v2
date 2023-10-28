@@ -1,63 +1,58 @@
-"use client";
-import { syne, ruwudu } from "./font";
-
+import { inter, roboto_mono } from "./font";
 import Image from "next/image";
-import Experience from "@/components/experience";
+import profile from "..//public/profile.png";
 import { FadeInUp } from "@/components/fadeInUp";
-import blob from "..//public/blobanimation.svg";
-import blob2 from "..//public/blobanimation2.svg";
+import Experience from "@/components/experience";
 
 export default function Home() {
   return (
     <div>
-      <main className="h-[calc(100vh-65px)] relative bg-fixed">
-        <div className="flex items-center h-full">
-          <div className="flex flex-col w-full">
-            <div className="absolute -z-1 inset-0">
-              <Image
-                className="opacity-70 blur-lg absolute bottom-30 -right-96"
-                src={blob}
-                alt="My SVG"
-                width={600}
-                height={600}
-                priority={true}
-              />
-            </div>
-            <div className="absolute -z-1 inset-0">
-              <Image
-                className="opacity-70 blur-lg absolute bottom-0 -left-96"
-                src={blob2}
-                alt="My SVG"
-                width={400}
-                height={400}
-                priority={true}
-              />
-            </div>
-            <FadeInUp>
-              <div className="relative z-10">
-                <h1
-                  className={`lg:text-3xl md:text-2xl text-xl ${syne.className}`}
-                >
-                  Hello.
-                </h1>
-                <h1
-                  className={`lg:text-8xl md:text-6xl text-5xl pb-5 ${syne.className}`}
-                >
-                  my name <br /> is kaleigh.
-                </h1>
-
-                <h1
-                  className={`lg:text-xl md:text-xl text-md text-right ${syne.className}`}
-                >
-                  I am student at Queen's <br /> University studying computer{" "}
-                  <br />
-                  science with a focus in AI.
-                </h1>
-              </div>
-            </FadeInUp>
-          </div>
+      <div className="h-screen grid lg:grid-cols-8 md:grid-cols-8 grid-cols-1 grid-rows-5 gap-5 p-5">
+        {/* Left Column */}
+        <div className="lg:col-start-1 lg:col-end-5 md:col-start-2 md:col-end-8 md:col-span-3 lg:row-start-1 lg:row-end-6 row-start-1 row-end-4 border-2 border-black inline-block bg-white rounded-3xl p-10">
+          <h1
+            className={`lg:text-5xl md:text-4xl text-3xl uppercase ${roboto_mono["300"]}`}
+          >
+            Hi my name is
+          </h1>
+          <h1
+            className={`lg:text-5xl md:text-4xl text-3xl uppercase ${roboto_mono["300"]}`}
+          >
+            <span className="border-2 border-black inline-block rounded-full p-2">
+              Kaleigh Feder.
+            </span>
+          </h1>
+          <h1
+            className={`lg:text-lg md:text-md text-sm text-[#666666] ${inter.className} pt-6`}
+          >
+            I’m an aspiring Full Stack Developer and a third-year student at
+            Queen’s University studying Computer Science with a focus in
+            Artificial Intelligence.
+          </h1>
+          <h1
+            className={`lg:text-lg md:text-md text-sm text-[#666666] ${inter.className} pt-6`}
+          >
+            I’m an aspiring Full Stack Developer and a third-year student at
+            Queen’s University studying Computer Science with a focus in
+            Artificial Intelligence.
+          </h1>
         </div>
-      </main>
+
+        {/* Right Column - Image */}
+        <div className="lg:col-start-7 lg:col-end-9 md:col-start-2 md:col-end-8 lg:row-start-3 lg:row-end-5 row-start-4 row-end-5 border-2 border-black inline-block bg-white rounded-3xl relative">
+          <Image
+            className="rounded-3xl p-2"
+            src={profile}
+            alt="My SVG"
+            fill={true}
+          />
+        </div>
+
+        {/* Right Column - Text */}
+        <div className="lg:col-start-6 lg:col-end-9 md:col-start-2 md:col-end-8 row-start-5 row-end-6 border-2 border-black inline-block bg-white rounded-3xl">
+          <h1>my text</h1>
+        </div>
+      </div>
       <Experience />
     </div>
   );

@@ -6,10 +6,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="px-16 md:px-32 lg:px-64 min-h-screen overflow-hidden">
-          <NavBar />
+        <div className=" min-h-screen overflow-hidden">
           {children}
-          <Footer />
         </div>
       </body>
     </html>
