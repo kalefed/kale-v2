@@ -1,63 +1,54 @@
 "use client";
-import { syne, ruwudu } from "./font";
+import { syne, space_grotesk, dm_sans } from "./font";
 
-import Image from "next/image";
+import ScrollButton from "@/components/scrollButton";
+import Image from 'next/image'
 import Experience from "@/components/experience";
 import { FadeInUp } from "@/components/fadeInUp";
-import blob from "..//public/blobanimation.svg";
-import blob2 from "..//public/blobanimation2.svg";
+import arrow from "..//public/arrow.svg";
+import bgBlob from "../public/4.png"
 
 export default function Home() {
   return (
     <div>
-      <main className="h-[calc(100vh-65px)] relative bg-fixed">
-        <div className="flex items-center h-full">
-          <div className="flex flex-col w-full">
-            <div className="absolute -z-1 inset-0">
-              <Image
-                className="opacity-70 blur-lg absolute bottom-30 -right-96"
-                src={blob}
-                alt="My SVG"
-                width={600}
-                height={600}
-                priority={true}
-              />
-            </div>
-            <div className="absolute -z-1 inset-0">
-              <Image
-                className="opacity-70 blur-lg absolute bottom-0 -left-96"
-                src={blob2}
-                alt="My SVG"
-                width={400}
-                height={400}
-                priority={true}
-              />
-            </div>
-            <FadeInUp>
-              <div className="relative z-10">
-                <h1
-                  className={`lg:text-3xl md:text-2xl text-xl ${syne.className}`}
-                >
-                  Hello.
-                </h1>
-                <h1
-                  className={`lg:text-8xl md:text-6xl text-5xl pb-5 ${syne.className}`}
-                >
-                  my name <br /> is kaleigh.
-                </h1>
-
-                <h1
-                  className={`lg:text-xl md:text-xl text-md text-right ${syne.className}`}
-                >
-                  I am student at Queen's <br /> University studying computer{" "}
-                  <br />
-                  science with a focus in AI.
-                </h1>
-              </div>
-            </FadeInUp>
+      <div className="relative h-[calc(100vh-68px)] flex items-center justify-between">
+        <div>
+          <h1
+            className={`lg:text-6xl md:text-4xl text-3xl ${dm_sans.className}`}
+          >
+            Hello, I'm
+            <br />
+            Kaleigh Feder.
+          </h1>
+          <div className="pt-6">
+            <h2
+              className={`lg:text-xl md:text-xl text-lg ${dm_sans.className} text-[#606060]`}
+            >
+              I'm a third-year computer science student at Queen's University
+              <br />
+              with a passion for full-stack development.
+            </h2>
           </div>
         </div>
-      </main>
+        <Image
+        alt="Vercel logo"
+        src={bgBlob}
+        width={500}
+        height={500}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
+      />
+        <div className="flex flex-row absolute bottom-10">
+          <ScrollButton />
+          <span
+            className={`pl-5 lg:text-lg md:text-lg text-md ${dm_sans.className}`}
+          >
+            Take a look at my experience
+          </span>
+        </div>
+      </div>
       <Experience />
     </div>
   );

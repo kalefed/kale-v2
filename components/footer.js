@@ -15,7 +15,7 @@ export default function Footer() {
     )}&body=${encodeURIComponent(body)}`;
   };
   return (
-    <div className="fixed bottom-0 font-mono bg-blur bg-contain">
+    <div className=" bottom-0 font-mono bg-blur bg-contain">
       <div>
         <IconButton
           size="medium"

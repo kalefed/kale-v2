@@ -44,7 +44,7 @@ export default function Experience({}) {
   ];
 
   return (
-    <div className="h-screen">
+    <div className="h-screen" id="experience">
       <div className="flex flex-col justify-center h-full">
         <h1
           className={`lg:text-5xl md:text-4xl text-3xl pb-10 ${syne.className}`}
@@ -59,7 +59,7 @@ export default function Experience({}) {
             <Link href={`/${pageLink[index]}`} passHref>
               <li
                 key={index}
-                className="border-gray-300 border-b p-2  md:text-lg sm:text-md hover:bg-gray-100"
+                className="border-gray-300 border-b p-2  md:text-lg sm:text-md hover:bg-gray-200"
                 href={`/${pageLink[index]}`}
               >
                 {item}
