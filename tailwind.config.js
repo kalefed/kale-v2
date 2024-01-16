@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'home-image':"url('../public/bgImage.jpg')",
-      },
       colors: {
         'off-white': '#F3F3F3',
       }
