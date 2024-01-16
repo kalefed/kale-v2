@@ -1,4 +1,4 @@
-import { Inter, Jost, DM_Mono, DM_Sans, Josefin_Sans, Kotta_One, Shrikhand, Syne, Ruwudu, Space_Grotesk} from 'next/font/google'
+import { Inter, Jost, DM_Mono, DM_Sans, Josefin_Sans, Kotta_One, Shrikhand, Syne, Space_Grotesk} from 'next/font/google'
 
 export const inter = Inter({
     subsets: ['latin'],
@@ -55,12 +55,6 @@ export const shrikhand = Shrikhand({
 
 
 export const syne = Syne({
-    weight: '400',
-    subsets: ['latin'],
-    display: 'swap',
-})
-
-export const ruwudu = Ruwudu({
     weight: '400',
     subsets: ['latin'],
     display: 'swap',

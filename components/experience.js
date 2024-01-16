@@ -1,4 +1,4 @@
-import { syne, ruwudu } from "@/app/font";
+import { syne} from "@/app/font";
 import Link from "next/link";
 import Image from "next/image";
 
