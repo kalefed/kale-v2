@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-blur {
-    background: rgba(255, 255, 255, 0); /* Adjust the background color and opacity as needed */
-    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+@layer base {
+  html {
+    @apply text-[#FFFDF3];
+    background: #1A1A1E;
   }
+}
 
-
-  body {
-    /* background: linear-gradient(6deg,#f0d1e8,#f5e498,#a6cddd);
-    background-size: 180% 180%;
-    animation: gradient-animation 12s ease infinite; */
-    background: #F3F3F3;
-    color: #181717; 
-  
+body {
+  background: #1A1A1E;
 }
