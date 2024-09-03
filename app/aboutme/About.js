@@ -96,7 +96,7 @@ const About = () => {
                 </div>
                 <div className="z-10 absolute bottom-0 -left-20">
                   <Image
-                    src="/bluestar.png"
+                    src="/kale-v2/bluestar.png"
                     width={40}
                     height={40}
                     className="animate-spinSlow"
