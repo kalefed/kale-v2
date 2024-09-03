@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import DevExperience from "./DevExperience";
+import Projects from "./Projects";
+
 export default function Home() {
   return (
     <div>
@@ -11,14 +13,24 @@ export default function Home() {
               Computer Science AI Student <br /> & Full Stack Developer
             </h1>
             <div className="z-10 absolute top-0 right-0">
-              <Image src="/pinkstar.png" width={40} height={40} />
+              <Image
+                src="/pinkstar.png"
+                width={40}
+                height={40}
+                className="animate-spinSlow"
+              />
             </div>
-            <div className="z-10 absolute bottom-20 left-0">
-              <Image src="/bluestar.png" width={40} height={40} />
+            <div className="z-10 absolute bottom-20 left-0 ">
+              <Image
+                src="/bluestar.png"
+                width={40}
+                height={40}
+                className="animate-spinSlow"
+              />
             </div>
           </div>
 
-          <p className="text-secondary-col text-[20px] font-medium text-center">
+          <p className="text-secondary-col text-[20px] text-center">
             I’m Kaleigh Feder, passionate about combining my love for the arts{" "}
             <br />
             and design with my interest in development to create full stack
@@ -35,6 +47,7 @@ export default function Home() {
         </div>
       </div>
       <DevExperience />
+      <Projects />
     </div>
   );
 }
