@@ -13,18 +13,29 @@ const About = () => {
                   Who Am I?
                 </h1>
                 <div className="z-10 absolute top-0 -right-20">
-                  <Image src="/pinkstar.png" width={40} height={40} />
+                  <Image
+                    src="/pinkstar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
                 <div className="z-10 absolute bottom-0 -left-20">
-                  <Image src="/bluestar.png" width={40} height={40} />
+                  <Image
+                    src="/bluestar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
               </div>
             </div>
             <p className="text-black-bg text-center text-[18px] mt-12">
               I’m a fourth year computer science student (AI major) studying at
-              Queen’s University. I have a specific interest in full stack
-              development and have over 3+ years of professional experience as a
-              developer as well as various developer roles through
+              Queen’s University. I have a specific interest in fullstack
+              development and have over{" "}
+              <span class="font-bold">3+ years of professional experience</span>{" "}
+              as a developer as well as various developer roles through
               extracurriculars
             </p>
           </div>
@@ -35,24 +46,37 @@ const About = () => {
                   What I’m Passionate About
                 </h1>
                 <div className="z-10 absolute top-0 -right-20">
-                  <Image src="/pinkstar.png" width={40} height={40} />
+                  <Image
+                    src="/pinkstar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
                 <div className="z-10 absolute bottom-0 -left-20">
-                  <Image src="/bluestar.png" width={40} height={40} />
+                  <Image
+                    src="/bluestar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
               </div>
             </div>
             <p className="text-black-bg text-center text-[18px] mt-12">
-              I’m passionate about mentorship and knowledge sharing in an
-              efforts to break barriers and make tech more accessible. I’ve
-              gotten involved through being an orientation leader, development
-              team lead and a peer mentor.
+              I’m passionate about <span class="font-bold">mentorship</span> and
+              knowledge sharing in an efforts to break barriers and make tech
+              more accessible. I’ve gotten involved through being an{" "}
+              <span class="font-bold">orientation leader</span>, development
+              <span class="font-bold"> team lead</span> and a{" "}
+              <span class="font-bold">peer mentor</span>.
             </p>
             <p className="text-black-bg text-center text-[18px] mt-12">
-              I love all things full stack development, from creating
-              user-centered designs to designing a database. I’ve sought out
-              both professional and extracurricular activities which have
-              allowed me to grow my skills as a developer and expose me to
+              I love all things{" "}
+              <span class="font-bold">full stack development</span>, from
+              creating user-centered designs to designing a database. I’ve
+              sought out both professional and extracurricular activities which
+              have allowed me to grow my skills as a developer and expose me to
               various technologies.
             </p>
           </div>
@@ -63,10 +87,20 @@ const About = () => {
                   Fun facts about me ٩(⸝⸝ᵕᴗᵕ⸝⸝)و ✧*.ﾟ
                 </h1>
                 <div className="z-10 absolute top-0 -right-20">
-                  <Image src="/pinkstar.png" width={40} height={40} />
+                  <Image
+                    src="/pinkstar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
                 <div className="z-10 absolute bottom-0 -left-20">
-                  <Image src="/bluestar.png" width={40} height={40} />
+                  <Image
+                    src="/bluestar.png"
+                    width={40}
+                    height={40}
+                    className="animate-spinSlow"
+                  />
                 </div>
               </div>
             </div>
