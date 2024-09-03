@@ -24,11 +24,11 @@ const ProjectTile = ({
             </ul>
           </div>
         </div>
-        <div className="relative overflow-hidden">
+        <div className="flex justify-center items-center">
           <Image
             src={thumbnail}
-            width={500}
-            height={175}
+            width={550}
+            height={200}
             // className="transition-transform duration-300 ease-in-out transform hover:scale-110 origin-left"
           />
         </div>

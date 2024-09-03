@@ -117,13 +117,9 @@ const About = () => {
               novels. My favorites include Red Rising, Dune, A Psalm For the
               Wild Built
             </p>
-            <p className="text-black-bg text-center text-[18px] mt-12">
+            <p className="text-black-bg text-center text-[18px] mt-12 mb-10">
               I love all things art, from graphic design, painting, digital art,
               pottery, clay, book binding and video editing
-            </p>
-            <p className="text-black-bg text-center text-[18px] mt-12">
-              My favourite games include Animal Crossing, Hades, Civilization,
-              Unpacking, Stardew Valley and Breath of the Wild.
             </p>
           </div>
         </div>
