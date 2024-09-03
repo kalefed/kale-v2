@@ -14,7 +14,7 @@ export default function Home() {
             </h1>
             <div className="z-10 absolute top-0 right-0">
               <Image
-                src="/pinkstar.png"
+                src="/nextjs-github-pages/pinkstar.png"
                 width={40}
                 height={40}
                 className="animate-spinSlow"
@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <div className="z-10 absolute bottom-20 left-0 ">
               <Image
-                src="/bluestar.png"
+                src="/nextjs-github-pages/bluestar.png"
                 width={40}
                 height={40}
                 className="animate-spinSlow"
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="mt-auto">
           <Image
             className="w-full"
-            src="/heroWave.png"
+            src="/nextjs-github-pages/heroWave.png"
             width={500}
             height={500}
           />

@@ -13,7 +13,7 @@ const DevExperience = () => {
           </h1>
           <div className="z-10 absolute top-0 -right-20">
             <Image
-              src="/pinkstar.png"
+              src="/nextjs-github-pages/pinkstar.png"
               width={40}
               height={40}
               className="animate-spinSlow"
@@ -21,7 +21,7 @@ const DevExperience = () => {
           </div>
           <div className="z-10 absolute bottom-0 -left-20">
             <Image
-              src="/bluestar.png"
+              src="/nextjs-github-pages/bluestar.png"
               width={40}
               height={40}
               className="animate-spinSlow"

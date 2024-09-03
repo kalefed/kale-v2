@@ -10,12 +10,12 @@ const page = () => {
           <h1 className="font-semibold text-[60px] text-center pt-12">
             Nice to meet you, I'm <br /> Kaleigh Feder
           </h1>
-          <Image src="/me.png" width={800} height={350} />
+          <Image src="/nextjs-github-pages/me.png" width={800} height={350} />
         </div>
         <div className="mt-auto">
           <Image
             className="w-full"
-            src="/heroWave.png"
+            src="/nextjs-github-pages/heroWave.png"
             width={500}
             height={400}
           />
