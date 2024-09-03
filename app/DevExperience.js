@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ExperienceTile from "@/components/ExperienceTile";
+import ExperienceTile from "@/components/experienceTile";
 
 const DevExperience = () => {
   const experienceData = [];
