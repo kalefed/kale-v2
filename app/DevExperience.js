@@ -35,7 +35,7 @@ const DevExperience = () => {
           position="Statistics Canada"
           dates="May 2024 - Present"
           description={[
-            "Created a bilingual application in Next.js with integrated data validation and NextAuth for protected pages, enabling users to validate data files and view detailed validation reports.",
+            "Created a bilingual application in Next.js with integrated data validation and NextAuth for protected pages, enabling users to validate data files and view detailed validation reports",
             "Implemented CI/CD pipelines in GitLab for managing releases and feature branches, leveraging existing infrastructure to enhance development and deployment efficiency across multiple projects",
           ]}
           type="Professional"
@@ -66,7 +66,7 @@ const DevExperience = () => {
           dates="April 2024 - Present"
           description={[
             "Designed and developed intuitive and visually cohesive web pages that reflect the club's identity",
-            "{Utilized Next.js, Tailwind CSS, and CSS animations to build a responsive and engaging frontend for the website",
+            "Utilized Next.js, Tailwind CSS, and CSS animations to build a responsive and engaging frontend for the website",
           ]}
           type="Extracurricular"
         />
