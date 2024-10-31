@@ -10,8 +10,8 @@ const Navbar = () => {
   console.log(isHomePage);
 
   return (
-    <div className="w-1/3">
-      <div className="flex flex-row justify-between pt-6 font-medium font-poppins">
+    <div className="lg:w-1/3">
+      <div className="flex flex-row justify-between pt-6 gap-2 font-poppins text-[12px] md:text-lg">
         {isHomePage ? (
           <>
             <a className="hover:text-[#C6D794]" href="#experience">
