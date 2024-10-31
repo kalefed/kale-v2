@@ -6,45 +6,23 @@ import Projects from "./Projects";
 export default function Home() {
   return (
     <div>
-      <div className="h-screen flex flex-col">
-        <div className="flex flex-grow flex-col items-center justify-center">
-          <div className="relative p-5">
-            <h1 className="font-semibold text-[60px] text-center z-0">
-              Computer Science AI Student <br /> & Full Stack Developer
-            </h1>
-            <div className="z-10 absolute top-0 right-0">
-              <Image
-                src="/kale-v2/pinkstar.png"
-                width={40}
-                height={40}
-                className="animate-spinSlow"
-              />
-            </div>
-            <div className="z-10 absolute bottom-20 left-0 ">
-              <Image
-                src="/kale-v2/bluestar.png"
-                width={40}
-                height={40}
-                className="animate-spinSlow"
-              />
-            </div>
+      <div className="h-full pt-10 flex flex-col justify-center items-center gap-6">
+        <div className="text-center">
+          <h1 className="text-[90px] font-medium font-sans">
+            Kaleigh Feder is a
+          </h1>
+          <div className="flex flex-row gap-10 -mt-6">
+            <h1 className="text-[100px] font-script">Full Stack</h1>
+            <h1 className="text-[90px] font-medium font-sans">developer</h1>
           </div>
+          <div className="flex flex-row gap-10 -mt-8">
+            <h1 className="text-[90px] font-medium font-sans">and</h1>
+            <h1 className="text-[100px] font-script">Creative</h1>
 
-          <p className="text-secondary-col text-[20px] text-center">
-            I’m Kaleigh Feder, passionate about combining my love for the arts{" "}
-            <br />
-            and design with my interest in development to create full stack
-            applications.
-          </p>
+            <h1 className="text-[90px] font-medium font-sans">thinker</h1>
+          </div>
         </div>
-        <div className="mt-auto">
-          <Image
-            className="w-full"
-            src="/kale-v2/heroWave.png"
-            width={500}
-            height={500}
-          />
-        </div>
+        <Image src="/kale-v2/profileImg.png" width={550} height={550} />
       </div>
       <DevExperience />
       <Projects />
