@@ -1,75 +1,102 @@
-import React from "react";
-import ProjectTile from "@/components/ProjectTile";
-import QWIC from "..//public/QWICwebsite.png";
-const Projects = () => {
+import Image from "next/image";
+
+export default function Projects() {
   return (
-    <div className="h-fit px-44 pb-12 pt-12" id="projects">
-      <h1 className="font-semibold text-[40px] text-center">
-        Featured Projects
-      </h1>
-      <div className="flex flex-col gap-12 pt-12">
-        <ProjectTile
-          subtitle="project for QWIC"
-          title="QWIC Club Website"
-          description="This project involved designing and developing a comprehensive website for a university club. The goal was to create a visually appealing, user-friendly platform that aligns with the club's brand identity"
-          contributions={[
-            "Led the design and development process, creating intuitive and visually cohesive web pages that reflect the club's identity",
-            "Leveraged Next.js, Tailwind CSS, and Framer Motion to develop a responsive, dynamic frontend, providing an engaging user experience across all devices",
-            "Utilized Prisma and PostgreSQL to build a robust backend, ensuring efficient data management and seamless functionality",
-          ]}
-          thumbnail={"qwic.png"}
-        />
-
-        <ProjectTile
-          subtitle="HCI Design Project (CISC)"
-          title="UI/UX Design Project - Prescence"
-          description="Prototype of an application aiming to encourage students to attend class - and keep going!"
-          contributions={[
-            "Aided in research, problem description and user characterization for application",
-            "Idealized the application design & aided in the Figma mockups",
-          ]}
-          thumbnail={"app.png"}
-        />
-        <ProjectTile
-          subtitle="Game Design Project (CISC226)"
-          title="Video Game Design Project - The Pentagram"
-          description="In my second year of computing, I took the Video Game Design course (CISC226), which required a year-long group project to create a video game from concept to completion. Our team developed 'The Pentagram', a detective-themed game that incorporated various gameplay mechanics and narrative elements"
-          contributions={[
-            "Developed the game's art assets, working closely with team members to create visually engaging graphics and animations that brought the game's world to life",
-            "Played a key role in crafting the game's storyline and puzzles, ensuring a cohesive and immersive experience for players by working alongside peers to balance challenge and entertainment",
-          ]}
-          thumbnail={"pentagram.png"}
-        />
-        {/* <ProjectTile
-          subtitle="QHacks App Project"
-          title=" QHACKS Project - Productivity App"
-          description=""
-        /> */}
-        <ProjectTile
-          subtitle="project for COMPSA"
-          title="COMPSA Admin Panel"
-          description="This project involved developing a responsive Admin Panel for the COMPSA website, enabling real-time updates to the database. The panel was designed to streamline content management and enhance user experience for administrators."
-          contributions={[
-            "Designed and developed a responsive Admin Panel using Next.js, Bulma CSS, and Docker, ensuring seamless access and updates across various device",
-            "Implemented secure user authentication to safeguard the admin functionalities and data integrity",
-          ]}
-          thumbnail={"compsa.png"}
-        />
-
-        <ProjectTile
-          subtitle="Team project for QWEB"
-          title="QVSA Club Website"
-          description="Designed and programmed QVSA's webpage to communicate their club to students."
-          contributions={[
-            "Led the design and development process, creating intuitive and visually cohesive web pages that reflect the club's identity",
-            "Leveraged React.js, Tailwind CSS, and Framer Motion to develop a responsive, dynamic frontend, providing an engaging user experience across all devices",
-            "Utilized Express and MongoDB to build a robust backend, ensuring efficient data management and seamless functionality",
-          ]}
-          thumbnail={"qvsa.png"}
-        />
+    <div className="bg-white px-36 py-10 mx-44" id="projects">
+      <div className="flex flex-row items-center gap-5">
+        <h1 className="text-[60px] font-script">Projects</h1>
+        <h1 className="text-[50px] font-medium font-sans">I've Made</h1>
+      </div>
+      <div className="grid grid-cols-2 gap-10">
+        {/* project one */}
+        <div>
+          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+            <Image
+              src="kale-v2/qwic.png"
+              width={550}
+              height={200}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <h2 className="text-lg pt-3 font-poppins">
+            Outreach & Community Website
+          </h2>
+          <p className="text-secondary-col font-poppins">
+            Queen's Women in Computing
+          </p>
+        </div>
+        {/* project two */}
+        <div>
+          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+            <Image
+              src="kale-v2/app.png"
+              width={550}
+              height={200}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <h2 className="text-lg pt-3 font-poppins">
+            Gameified Attendance App
+          </h2>
+          <p className="text-secondary-col font-poppins">
+            QHacks Project & CISC325 Project
+          </p>
+        </div>
+        {/* project three */}
+        <div>
+          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+            <Image
+              src="kale-v2/compsa.png"
+              width={550}
+              height={200}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <h2 className="text-lg pt-3 font-poppins">Admin Panel</h2>
+          <p className="text-secondary-col font-poppins">
+            Queen’s University Computing Students Association (COMPSA)
+          </p>
+        </div>
+        {/* project four */}
+        <div>
+          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+            <Image
+              src="kale-v2/pentagram.png"
+              width={550}
+              height={200}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <h2 className="text-lg pt-3 font-poppins">
+            The Pentagram - Video Game
+          </h2>
+          <p className="text-secondary-col font-poppins">
+            CISC226 Game Design Project
+          </p>
+        </div>
+        {/* project five */}
+        <div>
+          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+            <Image
+              src="kale-v2/qvsa.png"
+              width={300}
+              height={300}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <h2 className="text-lg pt-3 font-poppins">
+            Student Association Website
+          </h2>
+          <p className="text-secondary-col font-poppins">
+            Queen's Vietnamese Student Association (QVSA)
+          </p>
+        </div>
       </div>
     </div>
   );
-};
-
-export default Projects;
+}

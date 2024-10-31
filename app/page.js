@@ -39,8 +39,8 @@ export default function Home() {
           className="scale-75 lg:scale-100"
         />
       </div>
-      {/* <DevExperience />
-      <Projects /> */}
+      <DevExperience />
+      <Projects />
     </div>
   );
 }
