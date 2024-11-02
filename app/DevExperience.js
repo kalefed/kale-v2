@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import ExperienceTile from "@/components/experienceTile";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
 
@@ -10,31 +8,37 @@ const DevExperience = () => {
       title: "Junior Developer",
       company: "Statistics Canada",
       year: "2024",
+      id: "junior-dev",
     },
     {
       title: "Student Developer",
       company: "Canada Revenue Agency",
       year: "2023",
+      id: "student-developer",
     },
     {
       title: "Junior Analyst/Developer",
       company: "Statistics Canada",
       year: "2023",
+      id: "junior-analyst-dev",
     },
     {
       title: "Web Developer",
       company: "Queen's Women in Computing (QWIC)",
       year: "2024",
+      id: "web-dev",
     },
     {
       title: "Team Lead & Web Dev",
       company: "Queen’s Web Development Club",
       year: "2024",
+      id: "team-lead-dev",
     },
     {
       title: "Full Stack Developer",
       company: "Queen’s University Computing Students Association (COMPSA)",
       year: "2023",
+      id: "full-stack-dev",
     },
   ];
 
@@ -50,7 +54,7 @@ const DevExperience = () => {
             <li key={index}>
               <Link
                 className="flex flex-row justify-between font-poppins py-2 px-1 group"
-                href="/kale-v2"
+                href={"kale-v2/projects#" + item.id}
               >
                 <div className="flex flex-row gap-3 items-center">
                   <p>{item.title}</p>

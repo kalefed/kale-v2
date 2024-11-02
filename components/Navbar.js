@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="lg:w-1/3">
-      <div className="flex flex-row justify-between pt-6 gap-2 font-poppins text-[12px] md:text-lg">
+      <div className="flex flex-row justify-between pt-6 gap-2 font-poppins text-[12px] md:text-base">
         {isHomePage ? (
           <>
             <a className="hover:text-[#C6D794]" href="#experience">
