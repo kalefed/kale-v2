@@ -119,13 +119,7 @@ export default function Projects() {
             support and aiding in both website design and development.
           </p>
           <p className="font-poppins">
-            I worked on 5 different page designs on Figma, idealizing the
-            website design and creating illustrative art asssets for the
-            website. I led the development of the website, using Next.js,
-            Tailwind CSS and Vercel.
-          </p>
-          <p className="font-poppins">
-            Next steps for this project is backend development.
+            The website was built using React, Tailwind CSS and PostgreSQL.
           </p>
         </div>
       </div>
