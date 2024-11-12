@@ -4,14 +4,13 @@
 
 @layer base {
   html {
-    @apply text-[#FFFDF3];
-    background: #1A1A1E;
+    @apply text-[#2f3330];
   }
 }
 
-body {
-  background: #1A1A1E;
-}
+/* body {
+  background: #c4d9e1;
+} */
 
 html {
   scroll-behavior: smooth;

@@ -10,35 +10,37 @@ const Navbar = () => {
   console.log(isHomePage);
 
   return (
-    <div className="flex flex-row mx-44 justify-between text-secondary-col pt-6 font-medium">
-      {isHomePage ? (
-        <>
-          <a className="hover:text-[#C6D794]" href="#experience">
-            Experience
-          </a>
-          <a className="hover:text-[#C6D794]" href="#projects">
-            Projects
-          </a>
-        </>
-      ) : (
-        <>
-          <Link className="hover:text-[#C6D794]" href="/">
-            Experience
-          </Link>
-          <Link className="hover:text-[#C6D794]" href="/">
-            Projects
-          </Link>
-        </>
-      )}
-      <Link className="hover:text-[#C6D794]" href="/aboutme">
-        About Me
-      </Link>
-      <a
-        href="mailto:kaleighfeder@gmail.com"
-        className="text-secondary-col hover:text-[#C6D794]"
-      >
-        Contact Me
-      </a>
+    <div className="lg:w-1/3">
+      <div className="flex flex-row justify-between pt-6 gap-2 font-poppins text-[12px] md:text-base">
+        {isHomePage ? (
+          <>
+            <a className="hover:text-[#C6D794]" href="#experience">
+              Experience
+            </a>
+            <a className="hover:text-[#C6D794]" href="#projects">
+              Projects
+            </a>
+          </>
+        ) : (
+          <>
+            <Link className="hover:text-[#C6D794]" href="/">
+              Experience
+            </Link>
+            <Link className="hover:text-[#C6D794]" href="/">
+              Projects
+            </Link>
+          </>
+        )}
+        <Link className="hover:text-[#C6D794]" href="/aboutme">
+          About Me
+        </Link>
+        <a
+          href="mailto:kaleighfeder@gmail.com"
+          className=" hover:text-[#C6D794]"
+        >
+          Contact Me
+        </a>
+      </div>
     </div>
   );
 };

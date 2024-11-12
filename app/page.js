@@ -5,49 +5,43 @@ import Projects from "./Projects";
 
 export default function Home() {
   return (
-    <div>
-      <div className="h-screen flex flex-col">
-        <div className="flex flex-grow flex-col items-center justify-center">
-          <div className="relative p-5">
-            <h1 className="font-semibold text-[60px] text-center z-0">
-              Computer Science AI Student <br /> & Full Stack Developer
+    <main>
+      <section className="h-full pt-10 flex flex-col justify-center items-center lg:gap-6">
+        <header className="text-center">
+          <h1 className="lg:text-[90px] md:text-[60px] text-[40px] font-medium font-sans">
+            Kaleigh Feder is a
+          </h1>
+          <div className="flex flex-row md:gap-10 gap-5 md:-mt-6 -mt-2 justify-center items-center">
+            <h1 className="lg:text-[100px] md:text-[70px] text-[50px] font-script">
+              Full Stack
             </h1>
-            <div className="z-10 absolute top-0 right-0">
-              <Image
-                src="/kale-v2/pinkstar.png"
-                width={40}
-                height={40}
-                className="animate-spinSlow"
-              />
-            </div>
-            <div className="z-10 absolute bottom-20 left-0 ">
-              <Image
-                src="/kale-v2/bluestar.png"
-                width={40}
-                height={40}
-                className="animate-spinSlow"
-              />
-            </div>
+            <h1 className="lg:text-[90px] md:text-[60px] text-[40px] font-medium font-sans">
+              developer
+            </h1>
           </div>
+          <div className="flex flex-row md:gap-10 gap-5 md:-mt-8 -mt-2 justify-center items-center">
+            <h1 className="lg:text-[90px] md:text-[60px] text-[40px] font-medium font-sans">
+              and
+            </h1>
+            <h1 className="lg:text-[100px] md:text-[70px] text-[50px] font-script">
+              Creative
+            </h1>
 
-          <p className="text-secondary-col text-[20px] text-center">
-            I’m Kaleigh Feder, passionate about combining my love for the arts{" "}
-            <br />
-            and design with my interest in development to create full stack
-            applications.
-          </p>
-        </div>
-        <div className="mt-auto">
-          <Image
-            className="w-full"
-            src="/kale-v2/heroWave.png"
-            width={500}
-            height={500}
-          />
-        </div>
-      </div>
+            <h1 className="lg:text-[90px] md:text-[60px] text-[40px] font-medium font-sans">
+              thinker
+            </h1>
+          </div>
+        </header>
+        <Image
+          src="/kale-v2/profileImg.png"
+          width={550}
+          height={550}
+          alt="Profile picture of Kaleigh Feder"
+          className="scale-75 lg:scale-100"
+        />
+      </section>
       <DevExperience />
       <Projects />
-    </div>
+    </main>
   );
 }

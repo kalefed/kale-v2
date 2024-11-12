@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-cormorant-garamond)"],
+        script: ["var(--font-imperial-script)"],
+        poppins: ["var(--font-poppins)"],
+      },
       animation: {
         spinSlow: "spin 10s linear infinite", // Adjust the duration as needed
       },
@@ -16,6 +21,7 @@ module.exports = {
           "100%": { transform: "rotate(360deg)" },
         },
       },
+
       colors: {
         "off-white": "#F3F3F3",
         "black-bg": "#1A1A1E",
@@ -24,5 +30,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };
