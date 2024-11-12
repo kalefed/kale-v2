@@ -6,15 +6,15 @@ import { IconButton } from "@mui/material";
 
 const Footer = () => {
   return (
-    <div className="px-44 my-10">
+    <div className="mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-6">
-          <h1 className="text-[20px] z-0">
-            Interested in hiring me or my seeing my resume?
+          <h1 className="text-lg z-0 font-poppins">
+            Interested in chatting or my seeing my resume?
           </h1>
           <a
             href="mailto:kaleighfeder@gmail.com"
-            className="text-secondary-col text-[20px] hover:underline"
+            className="text-secondary-col text-lg hover:underline font-poppins"
           >
             kaleighfeder@gmail.com
           </a>

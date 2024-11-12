@@ -15,7 +15,7 @@ export default function Projects() {
         <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
             <Image
-              src="kale-v2/qwic.png"
+              src="/kale-v2/qwic.png"
               width={550}
               height={200}
               alt="Picture of the QWIC website"
@@ -33,7 +33,7 @@ export default function Projects() {
         <article>
           <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
-              src="kale-v2/app.png"
+              src="/kale-v2/app.png"
               width={550}
               height={200}
               alt="Picture of the QWIC website"
@@ -51,7 +51,7 @@ export default function Projects() {
         <article>
           <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
-              src="kale-v2/compsa.png"
+              src="/kale-v2/compsa.png"
               width={550}
               height={200}
               alt="Picture of the QWIC website"
@@ -67,7 +67,7 @@ export default function Projects() {
         <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
-              src="kale-v2/pentagram.png"
+              src="/kale-v2/pentagram.png"
               width={550}
               height={200}
               alt="Picture of the QWIC website"
@@ -85,7 +85,7 @@ export default function Projects() {
         <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
-              src="kale-v2/qvsa.png"
+              src="/kale-v2/qvsa.png"
               width={300}
               height={300}
               alt="Picture of the QWIC website"
