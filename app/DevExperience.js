@@ -55,7 +55,7 @@ const DevExperience = () => {
           <li key={item.id}>
             <Link
               className="flex flex-row justify-between font-poppins py-2 px-1 group"
-              href={"kale-v2/projects#" + item.id}
+              href={"/projects#" + item.id}
             >
               <div className="flex flex-col lg:flex-row lg:gap-3">
                 <span>{item.title}</span>
