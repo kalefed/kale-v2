@@ -42,9 +42,12 @@ const DevExperience = () => {
   ];
 
   return (
-    <section className="bg-white px-36 py-10 mx-44" id="experience">
-      <header className="flex flex-row items-center gap-5">
-        <h1 className="text-[60px] font-script">Development</h1>
+    <section
+      className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10"
+      id="experience"
+    >
+      <header className="flex flex-col lg:flex-row items-center gap-5 mb-8 lg:mb-2">
+        <h1 className="text-[60px] font-script -mb-10 lg:mb-0">Development</h1>
         <h1 className="text-[50px] font-medium font-sans">Experience</h1>
       </header>
       <ul>
@@ -54,7 +57,7 @@ const DevExperience = () => {
               className="flex flex-row justify-between font-poppins py-2 px-1 group"
               href={"kale-v2/projects#" + item.id}
             >
-              <div className="flex flex-row gap-3 items-center">
+              <div className="flex flex-col lg:flex-row lg:gap-3">
                 <span>{item.title}</span>
                 <span className="text-secondary-col">{item.company}</span>
                 <ArrowForwardIcon className="opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100" />

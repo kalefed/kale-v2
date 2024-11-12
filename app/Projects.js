@@ -2,12 +2,15 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section className="bg-white px-36 py-10 mx-44" id="projects">
-      <header className="flex flex-row items-center gap-5">
-        <h1 className="text-[60px] font-script">Projects</h1>
+    <section
+      className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10"
+      id="projects"
+    >
+      <header className="flex flex-col lg:flex-row items-center gap-5  mb-8 lg:mb-2">
+        <h1 className="text-[60px] font-script -mb-10 lg:mb-0">Projects</h1>
         <h1 className="text-[50px] font-medium font-sans">I've Made</h1>
       </header>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* project one */}
         <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
