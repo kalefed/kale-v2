@@ -1,4 +1,3 @@
-import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
 
@@ -43,36 +42,34 @@ const DevExperience = () => {
   ];
 
   return (
-    <div className="bg-white px-36 py-10 mx-44" id="experience">
-      <div className="flex flex-row items-center gap-5">
+    <section className="bg-white px-36 py-10 mx-44" id="experience">
+      <header className="flex flex-row items-center gap-5">
         <h1 className="text-[60px] font-script">Development</h1>
         <h1 className="text-[50px] font-medium font-sans">Experience</h1>
-      </div>
-      <div>
-        <ul>
-          {experience_items.map((item, index) => (
-            <li key={index}>
-              <Link
-                className="flex flex-row justify-between font-poppins py-2 px-1 group"
-                href={"kale-v2/projects#" + item.id}
-              >
-                <div className="flex flex-row gap-3 items-center">
-                  <p>{item.title}</p>
-                  <p className="text-secondary-col">{item.company}</p>
-                  <ArrowForwardIcon className="opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100" />
-                </div>
-                <p>{item.year}</p>
-              </Link>
+      </header>
+      <ul>
+        {experience_items.map((item, index) => (
+          <li key={item.id}>
+            <Link
+              className="flex flex-row justify-between font-poppins py-2 px-1 group"
+              href={"kale-v2/projects#" + item.id}
+            >
+              <div className="flex flex-row gap-3 items-center">
+                <span>{item.title}</span>
+                <span className="text-secondary-col">{item.company}</span>
+                <ArrowForwardIcon className="opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100" />
+              </div>
+              <time>{item.year}</time>
+            </Link>
 
-              {/* Add divider underneath item unless it is the last in teh list */}
-              {index != experience_items.length - 1 && (
-                <div className="border-b border-gray-300"></div>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+            {/* Add divider underneath item unless it is the last in teh list */}
+            {index != experience_items.length - 1 && (
+              <div className="border-b border-gray-300"></div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 
