@@ -5,9 +5,9 @@ import Projects from "./Projects";
 
 export default function Home() {
   return (
-    <div>
-      <div className="h-full pt-10 flex flex-col justify-center items-center lg:gap-6">
-        <div className="text-center">
+    <main>
+      <section className="h-full pt-10 flex flex-col justify-center items-center lg:gap-6">
+        <header className="text-center">
           <h1 className="lg:text-[90px] md:text-[60px] text-[40px] font-medium font-sans">
             Kaleigh Feder is a
           </h1>
@@ -31,16 +31,17 @@ export default function Home() {
               thinker
             </h1>
           </div>
-        </div>
+        </header>
         <Image
           src="/kale-v2/profileImg.png"
           width={550}
           height={550}
+          alt="Profile picture of Kaleigh Feder"
           className="scale-75 lg:scale-100"
         />
-      </div>
+      </section>
       <DevExperience />
       <Projects />
-    </div>
+    </main>
   );
 }
