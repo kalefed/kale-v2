@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import About from "./About";
 
 const page = () => {
   return (
-    <div className="bg-white px-36 py-10 mx-44">
+    <div className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10">
       <div>
         <div className="flex flex-grow flex-col justify-center items-center">
           <div className="flex flex-row items-center gap-5">
