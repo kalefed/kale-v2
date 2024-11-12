@@ -3,26 +3,26 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10">
-      <div>
-        <div className="flex flex-grow flex-col justify-center items-center">
-          <div className="flex flex-row items-center gap-5">
-            <h1 className="text-[50px] font-medium font-sans">
+    <section className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10">
+      <header>
+        <section className="flex flex-grow flex-col justify-center items-center">
+          <div className="flex flex-col xl:flex-row items-center gap-5">
+            <h1 className="text-[50px] font-medium font-sans -mb-10 lg:mb-0">
               Nice to meet you, I'm
             </h1>
             <h1 className="text-[60px] font-script">Kaleigh</h1>
           </div>
           <Image src="/kale-v2/me.png" width={800} height={350} />
-        </div>
-        <div className="mt-auto">
+        </section>
+        <section className="mt-auto">
           <Image
             className="w-full"
             src="/kale-v2/heroWave.png"
             width={500}
             height={400}
           />
-        </div>
-      </div>
+        </section>
+      </header>
       <p className="text-[18px] font-poppins">
         I’m a fourth year computer science student (AI major) studying at
         Queen’s University. I have a specific interest in fullstack development
@@ -45,7 +45,7 @@ const page = () => {
         me to grow my skills as a developer and expose me to various
         technologies.
       </p>
-    </div>
+    </section>
   );
 };
 
