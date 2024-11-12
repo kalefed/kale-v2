@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="bg-white px-36 py-10 mx-44" id="projects">
-      <div className="flex flex-row items-center gap-5">
+    <section className="bg-white px-36 py-10 mx-44" id="projects">
+      <header className="flex flex-row items-center gap-5">
         <h1 className="text-[60px] font-script">Projects</h1>
         <h1 className="text-[50px] font-medium font-sans">I've Made</h1>
-      </div>
+      </header>
       <div className="grid grid-cols-2 gap-10">
         {/* project one */}
-        <div>
+        <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
             <Image
               src="kale-v2/qwic.png"
@@ -25,9 +25,9 @@ export default function Projects() {
           <p className="text-secondary-col font-poppins">
             Queen's Women in Computing
           </p>
-        </div>
+        </article>
         {/* project two */}
-        <div>
+        <article>
           <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
               src="kale-v2/app.png"
@@ -43,9 +43,9 @@ export default function Projects() {
           <p className="text-secondary-col font-poppins">
             QHacks Project & CISC325 Project
           </p>
-        </div>
+        </article>
         {/* project three */}
-        <div>
+        <article>
           <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
               src="kale-v2/compsa.png"
@@ -59,9 +59,9 @@ export default function Projects() {
           <p className="text-secondary-col font-poppins">
             Queen’s University Computing Students Association (COMPSA)
           </p>
-        </div>
+        </article>
         {/* project four */}
-        <div>
+        <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
               src="kale-v2/pentagram.png"
@@ -77,9 +77,9 @@ export default function Projects() {
           <p className="text-secondary-col font-poppins">
             CISC226 Game Design Project
           </p>
-        </div>
+        </article>
         {/* project five */}
-        <div>
+        <article>
           <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
             <Image
               src="kale-v2/qvsa.png"
@@ -95,8 +95,8 @@ export default function Projects() {
           <p className="text-secondary-col font-poppins">
             Queen's Vietnamese Student Association (QVSA)
           </p>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 }
