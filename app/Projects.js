@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -13,7 +14,32 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* project one */}
         <article>
-          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+          <Link href="/projects/saywhat">
+            <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+              <Image
+                src="/kale-v2/saywhat.png"
+                width={550}
+                height={200}
+                alt="Picture of the QWIC website"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+              />
+            </div>
+          </Link>
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">Say What?</h2>
+            <p className="text-secondary-col font-poppins">
+              Queen's hackHer - Best Education Winner
+            </p>
+          </div>
+          <p className="font-poppins pt-3">
+            Translate slang-heavy sentences into clear, standard English while
+            simultaneously determining whether the sentiment is positive,
+            neutral, or negative
+          </p>
+        </article>
+        {/* project two */}
+        <article>
+          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
             <Image
               src="/kale-v2/qwic.png"
               width={550}
@@ -22,34 +48,43 @@ export default function Projects() {
               className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
           </div>
-          <h2 className="text-lg pt-3 font-poppins">
-            Outreach & Community Website
-          </h2>
-          <p className="text-secondary-col font-poppins">
-            Queen's Women in Computing
-          </p>
-        </article>
-        {/* project two */}
-        <article>
-          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
-            <Image
-              src="/kale-v2/app.png"
-              width={550}
-              height={200}
-              alt="Picture of the QWIC website"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">
+              Community Club Website
+            </h2>
+            <p className="text-secondary-col font-poppins">
+              Queen's Women in Computing
+            </p>
           </div>
-          <h2 className="text-lg pt-3 font-poppins">
-            Gameified Attendance App
-          </h2>
-          <p className="text-secondary-col font-poppins">
-            QHacks Project & CISC325 Project
+          <p className="font-poppins pt-3">
+            Led the design and development of Queen's Women in Computing's
+            (QWIC's) website
           </p>
         </article>
         {/* project three */}
         <article>
-          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+            <Image
+              src="/kale-v2/app.png"
+              width={440}
+              height={150}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">Rise</h2>
+            <p className="text-secondary-col font-poppins">
+              QHacks 24-hour Hackathon
+            </p>
+          </div>
+          <p className="font-poppins pt-3">
+            Encouraging increased lecture attendance using gamification
+          </p>
+        </article>
+        {/* project four */}
+        <article>
+          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
             <Image
               src="/kale-v2/compsa.png"
               width={550}
@@ -58,45 +93,58 @@ export default function Projects() {
               className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
           </div>
-          <h2 className="text-lg pt-3 font-poppins">Admin Panel</h2>
-          <p className="text-secondary-col font-poppins">
-            Queen’s University Computing Students Association (COMPSA)
-          </p>
-        </article>
-        {/* project four */}
-        <article>
-          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
-            <Image
-              src="/kale-v2/pentagram.png"
-              width={550}
-              height={200}
-              alt="Picture of the QWIC website"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">Admin Panel</h2>
+            <p className="text-secondary-col font-poppins">
+              Queen's Computing Association (COMPSA)
+            </p>
           </div>
-          <h2 className="text-lg pt-3 font-poppins">
-            The Pentagram - Video Game
-          </h2>
-          <p className="text-secondary-col font-poppins">
-            CISC226 Game Design Project
+          <p className="font-poppins pt-3">
+            Automating website updates without requiring non-technical users to
+            make code changes
           </p>
         </article>
         {/* project five */}
         <article>
-          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] overflow-hidden">
+          <div className="bg-[#d1c978] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+            <Image
+              src="/kale-v2/pentagram.png"
+              width={500}
+              height={200}
+              alt="Picture of the QWIC website"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+            />
+          </div>{" "}
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">The Pentagram</h2>
+            <p className="text-secondary-col font-poppins">
+              Game Design Project
+            </p>
+          </div>
+          <p className="font-poppins pt-3">
+            A murder mystery detective game which takes place on a desktop
+            computer
+          </p>
+        </article>
+        {/* project six */}
+        <article>
+          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
             <Image
               src="/kale-v2/qvsa.png"
               width={300}
-              height={300}
+              height={100}
               alt="Picture of the QWIC website"
               className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
           </div>
-          <h2 className="text-lg pt-3 font-poppins">
-            Student Association Website
-          </h2>
-          <p className="text-secondary-col font-poppins">
-            Queen's Vietnamese Student Association (QVSA)
+          <div className="flex justify-between items-center pt-3">
+            <h2 className="text-lg font-poppins font-bold">
+              Student Association Website
+            </h2>
+            <p className="text-secondary-col font-poppins">QWEB</p>
+          </div>
+          <p className="font-poppins pt-3">
+            Wesbite for Queen's Vietnamese Student Association (QVSA)
           </p>
         </article>
       </div>
