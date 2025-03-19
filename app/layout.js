@@ -4,6 +4,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import { Imperial_Script } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { HeroUIProvider } from "@heroui/react";
 
 const poppins = Poppins({
   weight: ["400", "500", "600"],
@@ -28,11 +29,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${CormorantGaramond.variable} ${ImperialScript.variable} ${poppins.variable}`}
       >
-        <div className="flex justify-center w-full">
-          <Navbar />
-        </div>
-        {children}
-        <Footer />
+        <HeroUIProvider>
+          <div className="flex justify-center w-full">
+            <Navbar />
+          </div>
+          {children}
+          <Footer />
+        </HeroUIProvider>
       </body>
     </html>
   );
