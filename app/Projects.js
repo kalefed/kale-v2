@@ -39,15 +39,17 @@ export default function Projects() {
         </article>
         {/* project two */}
         <article>
-          <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
-            <Image
-              src="/kale-v2/qwic.png"
-              width={550}
-              height={200}
-              alt="Picture of the QWIC website"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-          </div>
+          <Link href="/projects/qwic">
+            <div className="bg-[#F87A53] rounded-xl p-3 flex items-center justify-center h-[300px] oveflow-hidden">
+              <Image
+                src="/kale-v2/qwic.png"
+                width={550}
+                height={200}
+                alt="Picture of the QWIC website"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-105"
+              />
+            </div>
+          </Link>
           <div className="flex justify-between items-center pt-3">
             <h2 className="text-lg font-poppins font-bold">
               Community Club Website
