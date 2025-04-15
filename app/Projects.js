@@ -4,12 +4,17 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <section
-      className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10"
+      className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10 flex flex-col justify-center items-center"
       id="projects"
     >
-      <header className="flex flex-col lg:flex-row items-center gap-5  mb-8 lg:mb-2">
-        <h1 className="text-[60px] font-script -mb-10 lg:mb-0">Projects</h1>
-        <h1 className="text-[50px] font-medium font-sans">I've Made</h1>
+      <header className="mt-4 mb-6">
+        <Image
+          src="/kale-v2/projectTitle.png"
+          width={550}
+          height={550}
+          alt="Projects I've Made"
+          className="scale-75 lg:scale-100"
+        />
       </header>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* project one */}

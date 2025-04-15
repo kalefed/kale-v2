@@ -74,9 +74,6 @@ export default function AccordianExperience() {
     },
   ];
 
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
   return (
     <Accordion
       selectedKeys={selectedKeys}
@@ -87,14 +84,14 @@ export default function AccordianExperience() {
         <AccordionItem
           key={index}
           aria-label="Accordion 1"
-          title={<span className="text-xl">{item.title}</span>}
+          title={<span className="text-lg">{item.title}</span>}
           subtitle={
-            <span className="text-lg">
+            <span className="text-base">
               {item.company} - {item.year}
             </span>
           }
         >
-          <span className="text-md"> {item.desc}</span>
+          <span className="text-base"> {item.desc}</span>
         </AccordionItem>
       ))}
     </Accordion>
