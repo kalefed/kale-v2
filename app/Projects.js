@@ -7,7 +7,7 @@ export default function Projects() {
       className="bg-white mx-12 sm:mx-20 md:mx-56 lg:mx-72 py-10 flex flex-col justify-center items-center"
       id="projects"
     >
-      <header className="mt-4 mb-6">
+      <header className="mt-4">
         <Image
           src="/kale-v2/projectTitle.png"
           width={550}
@@ -16,6 +16,10 @@ export default function Projects() {
           className="scale-75 lg:scale-100"
         />
       </header>
+      <p className="font-poppins pt-3 text-center mb-6">
+        Click on each project to learn about the technologies used and my
+        contributions
+      </p>
       <div className="relative">
         <Image
           src="/kale-v2/corkBoard.jpg"
@@ -24,20 +28,24 @@ export default function Projects() {
           alt="Corkboard"
           className="scale-75 lg:scale-100"
         />
-        <Image
-          src="/kale-v2/hackHerBoard.png"
-          width={350}
-          height={350}
-          alt="Say What - HackHer 2025"
-          className="scale-75 lg:scale-100 absolute top-10 left-10 -rotate-3 hover:rotate-6 transition"
-        />
-        <Image
-          src="/kale-v2/qwicBoard.png"
-          width={350}
-          height={350}
-          alt="QWIC Club Website"
-          className="scale-75 lg:scale-100 absolute top-10 right-20 rotate-3 hover:-rotate-6 transition"
-        />
+        <Link href="/projects/saywhat">
+          <Image
+            src="/kale-v2/hackHerBoard.png"
+            width={350}
+            height={350}
+            alt="Say What - HackHer 2025"
+            className="scale-75 lg:scale-100 absolute top-10 left-10 -rotate-3 hover:rotate-6 transition"
+          />
+        </Link>
+        <Link href="/projects/qwic">
+          <Image
+            src="/kale-v2/qwicBoard.png"
+            width={350}
+            height={350}
+            alt="QWIC Club Website"
+            className="scale-75 lg:scale-100 absolute top-10 right-20 rotate-3 hover:-rotate-6 transition"
+          />
+        </Link>
         <Image
           src="/kale-v2/compsaBoard.png"
           width={350}
