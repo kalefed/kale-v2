@@ -8,7 +8,7 @@ const ProjectTile = ({
   thumbnail,
 }) => {
   return (
-    <div className="bg-[#1C2327] border border-1 border-gray-400 rounded-xl">
+    <div className="bg-[#1C2327] border-1 border-gray-400 rounded-xl">
       <div className="flex flex-row">
         <div className="w-1/2 p-4">
           {/* <p className="text-[18px] text-secondary-col">{subtitle}</p> */}
